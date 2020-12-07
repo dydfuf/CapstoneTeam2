@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="키워드 수정"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:background="#D3DDDE"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+
+            android:fontFamily="@font/kyobo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/EditKeyword1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/kyobo"
+            android:layout_marginBottom="5dp"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/EditKeyword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/kyobo"
+            android:layout_marginBottom="5dp"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/EditKeyword3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/kyobo"
+            android:layout_marginBottom="5dp"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <View
+        android:background="#66bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+
+
+
+
+</LinearLayout>

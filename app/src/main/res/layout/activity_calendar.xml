@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="60dp"
+        android:src="@drawable/toplogo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#00000000"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/monthPrevious"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#00000000"
+            android:fontFamily="@font/kyobo"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="prev"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/yearText"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/kyobo"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="YearView"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/monthText"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/kyobo"
+                android:gravity="center_horizontal"
+                android:text="MonthView"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/monthNext"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"
+            android:fontFamily="@font/kyobo"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="next"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="290dp"
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="#00000000">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="일"
+                android:textSize="17dp"
+                android:textColor="#FF7D6E"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/kyobo"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="월"
+                android:textSize="17dp"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/kyobo"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="화"
+                android:textSize="17dp"
+
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/kyobo"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="수"
+                android:textSize="17dp"
+
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/kyobo"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="목"
+                android:textSize="17dp"
+
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/kyobo"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="금"
+                android:textSize="17dp"
+
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/kyobo"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="토"
+                android:textSize="17dp"
+                android:textColor="#4CC3FC"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/kyobo"
+                />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/monthView"
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:fontFamily="@font/kyobo"
+            android:horizontalSpacing="0dp"
+            android:numColumns="7"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0dp"></GridView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".SelectMenu">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="60dp"
+        android:src="@drawable/toplogo"/>
+
+    <Button
+        android:id="@+id/btn_imageFromKeyword"
+        android:text="키워드로 그림보기"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/kyobo"/>
+
+    <Button
+        android:id="@+id/btn_drawingActivity"
+        android:text="직접 그리기"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/kyobo"/>
+
+    <Button
+        android:id="@+id/btn_imageFromPhone"
+        android:text="앨범에서 가져오기"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/kyobo"/>
+
+    <Button
+        android:id="@+id/btn_return"
+        android:text="돌아가기"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_button_white"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/kyobo"/>
+
+</LinearLayout>
